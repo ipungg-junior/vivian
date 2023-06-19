@@ -16,7 +16,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'j4gf_38a@*%n@n(sd#%lo*q^2igcjlc2pnyht+!s-xq6637ky('
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', 'yummypiv.com']
 
 
 # Application definition

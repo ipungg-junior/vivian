@@ -1,7 +1,8 @@
 from django.contrib import admin
 from django.urls import path
-from app.views import landing
+from app.views import landing, portofolio
 
 urlpatterns = [
-    path('', landing)
+    path('', landing),
+    path('portofolio/', portofolio)
 ]
