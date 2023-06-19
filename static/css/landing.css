@@ -1,0 +1,566 @@
+/* blue base #295BD9 */
+/* pastel ##e12638 */
+
+:root {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgba(255, 255, 255, 0.96);
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    font-family: "Google Sans",Roboto,Arial,Helvetica,sans-serif;
+
+}
+
+nav {
+    padding: 6px 0px 6px 22px;
+    background: linear-gradient(to top left, rgb(233, 232, 232),#fff);
+    width: 100vw;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    font-family: "Google Sans",Roboto,Arial,Helvetica,sans-serif;
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,.12),inset 0 -1px 0 0 #dadce0;
+    z-index: 50;
+}
+
+.logo {
+    width: 50px;
+    height: 40px;
+    background-image: url('../assets/logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 28px;
+}
+
+.navbar ul {
+    list-style: none;
+    text-decoration: none;
+    display: inline-flex;
+    
+}
+
+.navbar ul li {
+    font-weight: 400;
+    font-size: 14px;
+    margin-right: 2em;
+    cursor: pointer;
+    color: #838383;
+}
+
+.active {
+    color: rgb(28, 27, 27) !important;
+    font-weight: bold !important;
+    text-decoration: underline;
+}
+
+.color-white {
+    color: rgb(238, 238, 238) !important;
+}
+
+.color-black {
+    color: rgb(22, 22, 22) !important;
+}
+
+.contact-container {
+
+}
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50pmy-floatx;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
+.jumbotron {
+    display: flex;
+    width: 100vw;
+    height: 100vh;   
+    background: linear-gradient(to bottom right, #204dbe, #4c7af0);;
+}
+
+.left-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+    height: 100vh;
+}
+
+.right-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+    height: 100vh;
+}
+
+
+
+/* partner */
+.partner {
+    height: 31em;
+    padding: 2rem 0;
+    min-height: 80vh;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: auto;
+    display: flex;
+    background-color: var(--main-color);
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 2px solid white;
+}
+.partner hr {
+    border-top: 2px solid white;
+}
+.partner h3 {
+    padding-top: 3rem;
+    color:white;
+}
+.partner .slider-track {
+    padding: 7rem 0 12rem 0;
+    animation: scroll 20s linear infinite;
+    display: flex;
+    width: calc(250px * 8);
+    margin-left: 70em;
+}
+@keyframes scroll { 
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-250px * 6));
+    }
+}
+.slider-track .slide {
+    padding: 1.4em;
+    align-items: center;
+    height: 250px;
+    width: 250px;
+    display: flex;
+}
+
+.slide img {
+	width: 260px;
+	height: 250px;
+	object-fit: scale-down;
+}
+
+
+
+.title-jumbotron {
+    width: 550px;
+    font-size: 48px;
+    margin: 0;
+}
+
+.description-jumbotron {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 550px;
+    font-size: 16px;
+    margin-top: 6px;
+}
+
+.right-container img {
+    margin-right: 80px;
+}
+
+.action {
+    display: flex;
+    flex-direction: row;
+    width: 550px;
+}
+
+.button-get-started{
+    border-radius: 2px;
+    width: fit-content;
+    cursor: pointer;
+    outline-style: solid;
+    outline-width: 2px;
+    outline-color: #e12638;
+    background-color: #e12638;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 14px;
+    align-self: flex-start;
+    padding: 13px 28px 13px 28px;
+    margin-right: 14px;
+}
+
+.button-get-started:hover{
+    background-color: #c72636;
+}
+
+.button-contact{
+    border-radius: 2px;
+    width: fit-content;
+    cursor: pointer;
+    outline-style: solid;
+    outline-width: 2px;
+    outline-color: rgb(232, 232, 232);
+    color: rgb(28, 27, 27);
+    align-self: flex-start;
+    padding: 13px 28px 13px 28px;
+}
+
+.button-contact:hover{
+    background-color: rgb(223, 223, 223);
+}
+
+.title-purpose {
+    display: flex;
+    margin-bottom: 2em;
+}
+
+.title-purpose h2 {
+    font-size: 22px;
+    align-self: center;
+}
+
+.title-purpose p {
+    font-family: 'Inter Var', -apple-system, BlinkMacSystemFont, San Francisco, Segoe UI, Roboto, Helvetica Neue, sans-serif;
+    font-weight: 800;
+    font-size: 24px;
+    color: blue;
+}
+
+/* Purpose Jumbotron */
+
+.purpose-jumbotron {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    padding: 18px 28px 18px 28px;
+    background-color: #eeeeeed6;
+}
+
+.client-wrapper {
+    height: 170px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item {
+    padding: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.client-item img {
+    object-fit: contain;
+    width: 120px;
+}
+
+.pros-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.pros-panel {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    flex-direction: column;
+    width: calc(100vw / 6);
+    justify-content: center;
+    align-items: center;
+    height: 11em;
+}
+
+.pros-panel .text-desc {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    justify-content: flex-start;
+}
+
+.foot-jumbotron {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    padding: 18px 28px 18px 28px;
+    background-color: #575757;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+/* Service Jumbotron */
+
+.service-jumbotron {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    padding-bottom: 54px;
+}
+
+.service-item-panel {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,.12),inset 0 -2px 0 0 #dadce0;
+    display: flex;
+    flex-direction: column;
+    width: calc(100vw / 6);
+    height: 300px;
+    background-image: linear-gradient(to bottom right, rgb(248, 248, 248), rgb(243, 242, 242));
+    padding-bottom: 40px;
+    border-radius: 3px;
+    margin-right: 12px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.service-item-panel.service-master {
+    outline-style: solid;
+    outline-width: 3px;
+    outline-color: rgb(150, 150, 150);
+    margin-top: -40px;
+    height: 380px;
+    box-shadow: 4px 100px 200px 0 rgba(0,0,0,.12),inset 0 -3px 0 0 #bfbfbf;
+}
+
+.service-item-panel.service-master .text-price s{
+    font-size: 17px;
+    text-decoration-thickness: 2px;
+}
+
+/* Style the list */
+.service-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 90px;
+}
+
+.text-title {
+    font-family: "Google Sans",Roboto,Arial,Helvetica,sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.text-price {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: rgb(35, 162, 35);
+}
+
+
+.service-button {
+    margin-top: 8px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.service-click {
+    cursor: pointer;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 12px;
+    padding: 17px;
+    font-family: "Google Sans",Roboto,Arial,Helvetica,sans-serif;
+    background-image: linear-gradient(to bottom right, #e12638, #ec1d32);
+}
+  
+.service-click:hover {
+    background-image: linear-gradient(to bottom right, rgb(116, 116, 116), rgb(172, 172, 172));
+}
+
+.service-feature {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-feature li {
+    margin-top: 6px;
+}
+
+.service-feature li:first-child {
+    margin-top: 0px;
+}
+
+.col {
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    padding-top: 49px;
+    margin-top: 41px;
+    justify-content: center;
+}
+
+.col .service-item-panel {
+    margin-right: 25px; 
+}
+
+
+
+
+
+/* 
+    Media query responsive ( < 600px )
+*/
+
+@media only screen and (max-width: 600px) {
+
+    nav {
+        padding: 14px 0px 14px 0px;
+        transition-duration: 2s;
+    }
+
+    .navbar ul {
+        display: none;
+    }
+
+    .navbar ul li{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        margin-top: 16px;
+    }
+
+    .navbar .nav-hamburger {
+        cursor: pointer;
+        position: absolute;
+        right: 28px;
+        display: flex;
+        width: 21px;
+        height: 20px;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .nav-hamburger .line-1 {
+        padding: 1px;
+        width: 100%;
+        background-color: rgb(177, 177, 177);
+    }
+
+    .nav-hamburger .line-2 {
+        padding: 1px;
+        width: 100%;
+        background-color: rgb(177, 177, 177);
+    }
+
+    .nav-hamburger .line-3 {
+        padding: 1px;
+        width: 100%;
+        background-color: rgb(177, 177, 177);
+    }
+
+    .logo {
+        width: 26px;
+        height: 26px;
+    }
+
+    .jumbotron {
+        flex-direction: column-reverse;
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    .left-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: auto;
+        margin-top: 16px;
+    }
+    
+    .right-container {
+        display: flex;
+        margin-top: 90px;
+        width: 100vw;
+        height: auto;
+    }
+
+    .right-container img {
+        margin: 0;
+        width: 120px;
+        align-content: center;
+    }
+
+    .title-jumbotron {
+        width: 100vw;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .description-jumbotron {
+        width: 100vw;
+        font-size: 13px;
+        text-align: center;
+        margin-top: 8px;
+    }
+
+    .action {
+        width: 100vw;
+        font-size: 13px;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .btn {
+        padding: 8px 12px 8px 12px !important;
+    }
+
+
+    .pros-container {
+        flex-direction: column;
+    }
+
+
+    .pros-panel .text-desc {
+        width: 100vw;
+    }
+
+    .client-item img {
+        width: 100px;
+    }
+
+    .purpose-jumbotron {
+        padding-left: 0;
+    }
+
+}
